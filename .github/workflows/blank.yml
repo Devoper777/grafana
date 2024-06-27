@@ -47,6 +47,6 @@ jobs:
         gcloud components update
         gcloud container clusters get-credentials directed-graph-426923-n9-gke --region us-east5 --project directed-graph-426923-n9
         helm repo add grafana https://grafana.github.io/helm-charts
-        helm template grafana grafana/grafana -f values.yaml -n grafana
+        # helm template grafana grafana/grafana -f values.yaml -n grafana
         ls
         kubectl apply -f values.yaml -n grafana
