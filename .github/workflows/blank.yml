@@ -38,7 +38,7 @@ jobs:
     
     - name: Access cloned repo
       run: |
-         cd grafanagke
+         cd grafana
          ls -la
     - name: Deploy with Helm
       env:
