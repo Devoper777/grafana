@@ -49,4 +49,4 @@ jobs:
         helm repo add grafana https://grafana.github.io/helm-charts
         # helm template grafana grafana/grafana -f values.yaml -n grafana
         ls
-        kubectl apply -f values.yaml -n grafana
+        kubectl apply -f values.yaml -n grafana --validate=false
